@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     env: 
       MONGODB_CLUSTER_ADDRESS: clusterlab1.rc8yec6.mongodb.net
-      MONGODB_USERNAME: elviejo
-      MONGODB_PASSWORD: 1q20.Luna
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     steps:
       - name: Get Code
